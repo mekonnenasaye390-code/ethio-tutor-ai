@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ethio Tutor AI</title><link rel="icon" type="image/png" href="/favicon.png"><link rel="stylesheet" href="/style.css"></head><body>
+<header>
+  <div class="logo"><img class="lg" src="/favicon.png" alt="Ethio Tutor AI"><div><b>Ethio Tutor <i>AI</i></b><small>Learn • Practice • Grow</small></div></div>
+  <div class="search"><span>🔍</span><input id="q" placeholder="Ask anything... (e.g. Explain photosynthesis, Solve a math problem)"><button id="askBtn">➤ Ask</button></div>
+  <select id="lang"><option>English</option><option>Amharic</option><option>Tigrinya</option><option>Oromo</option><option>Somali</option></select>
+  <div class="user"><span class="av">👤</span><div><b id="uname">Mekonnen Asaye</b><small>Student</small></div></div>
+</header>
+<div class="wrap">
+<aside>
+  <nav>
+    <a data-go="home" class="on">🏠 Home</a><a data-go="tutor">🤖 AI Tutor</a><a data-go="study">📖 Study Materials</a>
+    <a data-go="exam">📝 Exam Practice</a><a data-go="upload">⬆️ Upload &amp; Ask</a><a data-go="history">🕘 My History</a><a data-go="settings">⚙️ Settings</a>
+  </nav><hr><p class="sl">Supported Languages</p>
+  <div id="langs"><a>🇪🇹 Amharic</a><a>🇪🇹 Tigrinya</a><a>🇪🇹 Oromo</a><a>🇸🇴 Somali</a><a>🇬🇧 English</a></div><hr>
+  <p class="qt">“Small steps<br>&nbsp;create big dreams.”<small>— Ethio Tutor AI</small></p><div class="sprout">🌱📚</div>
+</aside>
+<main>
+<section id="v-home" class="view on">
+  <div class="cols"><div>
+    <div class="hero"><div class="mtn"></div><div class="tower"></div><div class="flag"></div>
+      <h1>Welcome to<br><span>Ethio Tutor <em>AI</em></span> 🎓</h1><p>Your smart AI tutor for better learning in Ethiopia.</p><h3>እውቀት ለውጥ ነው!</h3>
+      <div class="pills"><span>💡 Study Smarter</span><span>⚡ Get Instant Answers</span><span>🌍 Learn in Your Language</span></div></div>
+    <div class="cards">
+      <div class="card c1" data-go="tutor"><i>💬</i><h4>AI Tutor</h4><p>Ask questions and get clear, simple answers.</p><b>➜</b></div>
+      <div class="card c2" data-go="study"><i>📖</i><h4>Study Materials</h4><p>Access notes, summaries, and explanations.</p><b>➜</b></div>
+      <div class="card c3" data-go="exam"><i>📄</i><h4>Exam Practice</h4><p>Get practice questions and improve your skills.</p><b>➜</b></div>
+      <div class="card c4" data-go="upload"><i>⬆️</i><h4>Upload &amp; Ask</h4><p>Upload your PDF or image and ask anything.</p><b>➜</b></div>
+    </div>
+    <div class="row2">
+      <div class="panel"><div class="ph"><b>🕘 Recent Activity</b><a data-go="history">View All</a></div><div id="recent"></div></div>
+      <div class="panel cheer"><div class="big">🧑🏾‍💻💡</div><h3>You Can Do It!</h3><p>Every question you ask<br>brings you closer to your goals.</p><button data-go="tutor">Start Learning ➜</button></div>
+    </div></div>
+    <div>
+      <div class="panel tools"><h3>⚡ Quick Tools</h3>
+        <div class="tool" data-tool="math"><i style="background:#2f80ed">∑</i><div><b>Math Solver</b><small>Solve step by step</small></div>›</div>
+        <div class="tool" data-tool="translate"><i style="background:#3b8cf0">文A</i><div><b>Language Translation</b><small>Amharic / Tigrinya / Oromo / Somali</small></div>›</div>
+        <div class="tool" data-tool="voice"><i style="background:#7b4de0">🎤</i><div><b>Voice Assistant</b><small>Speak and get answers</small></div>›</div>
+        <div class="tool" data-tool="image"><i style="background:#8a4fe3">🖼️</i><div><b>Image Understanding</b><small>Describe or generate images</small></div>›</div>
+        <div class="tool" data-tool="file"><i style="background:#2f80ed">📄</i><div><b>File Chat</b><small>Chat with your documents</small></div>›</div>
+      </div>
+      <div class="panel quote"><h3>❝ Today's Quote</h3><p class="am">“እውቀት የዘር ብርሃን ነው፡”</p><p>Knowledge is the light of the nation.”</p><small>🇪🇹 Ethiopian Proverb</small></div>
+    </div></div>
+</section>
+<section id="v-chat" class="view"><div class="chatbox">
+  <h2 id="ctitle">AI Tutor</h2><div id="msgs"></div>
+  <div id="fileTag" class="filetag" hidden></div>
+  <div class="inp"><button id="attach" title="Attach PDF or image">📎</button><input type="file" id="file" accept="image/*,application/pdf" hidden>
+    <button id="mic" title="Speak">🎤</button><input id="msg" placeholder="Type your question..."><button id="send">Send ➤</button></div>
+</div></section>
+<section id="v-history" class="view"><div class="chatbox"><h2>My History</h2><div id="hlist"></div><button class="danger" id="clear">Clear history</button></div></section>
+<section id="v-settings" class="view"><div class="chatbox"><h2>Settings</h2><label>Your name</label><input id="nameIn"><button id="saveName" class="primary">Save</button></div></section>
+</main></div>
+<script src="/script.js"></script></body></html>
