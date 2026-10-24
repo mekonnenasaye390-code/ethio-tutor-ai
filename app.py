@@ -7,7 +7,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip()
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash").strip()
 
 
 @app.route("/")
